@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Portfolio | PavelAltynnikov</title>
+
+</head>
+<body>
+
+	<header class="resume-header">
+
+		<h1>Павел Алтынников</h1>
+
+		<div class="header-body">
+
+			<div class="header-info">
+				<ul class="bio">
+					<li>Люблю делать игры на движке Unity.</li> 
+					<li>Начинал с экспериментов на pyGame.</li> 
+					<li>
+						Интересуюсь игровой индустрией, 
+						слежу за новостями и новинками.
+					</li> 
+					<li>Библиотека Steam 450+ игр (70+ VR игр).</li> 
+					<li>С 2016 года увлекаюсь VR играми.</li> 
+					<li>
+						С 2020 года имею VR шлем: 
+						Oculus Quest 2 (сейчас Quest 3).
+					</li> 
+					<li>Любимые жанры: Метроидвания, Пазл, Ритм-игра, Co-op.</li> 
+					<li>
+						Любимые игры: 
+						God&nbsp;of&nbsp;War, 
+						SW&nbsp;Jedi, 
+						Hollow&nbsp;Knight, 
+						The&nbsp;Talos&nbsp;Principle, 
+						The&nbsp;Witness,
+						Order&nbsp;of&nbsp;the&nbsp;sinking&nbsp;star,
+						Helldivers,
+						Beat&nbsp;Saber...
+					</li> 
+					<li>
+						<p style="margin: 0px">Итоги Steam:
+							<a
+								href="https://s.team/y22/gnhjtvj?l=russian"
+								target="#"
+							>
+								2022г;
+							</a>
+							<a
+								href="https://s.team/y23/gnhjtvj?l=russian"
+								target="#"
+							>
+								2023г;
+							</a>
+							<a
+								href="https://s.team/y24/gnhjtvj?l=russian"
+								target="#"
+							>
+								2024г;
+							</a>
+							<a
+								href="https://s.team/y25/gnhjtvj?l=russian"
+								target="#"
+							>
+								2025г;
+							</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<img 
+				src="https://avatars.githubusercontent.com/u/45833327?s=400&u=5a987411d9e289bfd87be96fbcd5ce885c7970ba&v=4"
+				alt="my awatar"
+				height=300
+				class="resume-avatar"
+			>
+
+		</div>
+
+		<div class="skills-container">
+			<span class="skill-badge">C# / ООП / Паттерны</span>
+			<span class="skill-badge">Git / Git LFS</span>
+			<span class="skill-badge">Unity 2D / 3D</span>
+			<span class="skill-badge">Shader Graph</span>
+			<span class="skill-badge">Devtools (Unity Editor)</span>
+			<span class="skill-badge">UniTask</span>
+			<span class="skill-badge">Addressables</span>
+		</div>
+
+	</header>
+
+	<h2 class="section-title">Проекты</h2>
+
+	<div class="projects">
+
+		<div class="project">
+			<h2 class="project-title">Among Usagi</h2>
+
+			<div class="tags">
+				<span class="tag">2025-2026г</span>
+				<span class="tag">Unity 2D</span>
+				<span class="tag">PC</span>
+				<span class="tag">
+					<a 
+						href="https://drive.google.com/file/d/1PRxPn_nR-S-HksXpfn4eouoYbBHNwgVi/view?usp=sharing" 
+						target="#"
+					>
+						Build
+					</a>
+				</span>
+			</div>
+
+			<p class="project-description">
+				Данная игра - подарок на ДР поэтому она очень персонализирована
+				(сроки мы просрали потому что хотели сделать еще лучше)).
+				<br>
+				Это пазл-квиз, а это значит что информации внутри игры чаще всего не
+				хаватит чтобы решить тот или иной пазл.
+				<br>
+				На текущий момент это самая большая и долго разрабатываемая игра.
+				В ней 18 пазлов (экранов),
+				главный уровень со входами в эти пазлы и
+				ключи от последней двери, раскиданные по пазлам.
+				<br>
+				Я работал не один, идея и концепция принадлежит моему другу,
+				а для арта мы нанимали профессиональную 
+				<a
+					href="https://vk.ru/dark_6"
+					target="#"
+				>
+					художницу.
+				</a>
+			</p>
+
+			<img
+				src="./images/among_usagi_gif_1.gif"
+				alt="gif1"
+				Height="278"
+			>
+
+			<img
+				src="./images/among_usagi_gif_2.gif"
+				alt="gif2"
+				Height="278"
+			>
+
+			<img
+				src="./images/among_usagi_gif_3.gif"
+				alt="gif3"
+				Height="278"
+			>
+
+			<img
+				src="./images/among_usagi_gif_4.gif"
+				alt="gif4"
+				Height="278"
+			>
+
+			<p>
+				В игре есть Devtools.
+				В релизной версии они скрыты от игрока, 
+				но их всё равно можно открыть, 
+				нужно кликать 10 раз по правому верхнему углу в течении 5 секунд
+				и появятся две кнопки.
+			</p>
+
+			<p style="margin-bottom: 0px">
+				С их помощью можно:
+			</p>
+
+			<ul>
+				<li>Менять состояние игры;</li>
+				<li>Переключаться на нужный пазл;</li>
+				<li>Решать пазл по клику.</li>
+			</ul>
+
+			<img
+				src="./images/among_usagi_devtools.png"
+				alt="devtools"
+				width=1000
+			>
+
+			<p>
+				Последние два месяца я усиленно полировал игру 
+				(спасибо другу, который тестил каждый билд),
+				но всё же хочется доделать в этой игре систему сейвов и оптимизировать игру
+				для WebGL чтобы в неё можно было играть на itch.io.
+			</p>
+		</div>
+
+		<div class="project">
+			<div class="project-header">
+				<h2 class="project-title">Run Vlad Run</h2>
+			</div>
+
+			<div class="tags">
+				<span class="tag">2024-2025г</span>
+				<span class="tag">Unity 2D</span>
+				<span class="tag">PC</span>
+				<span class="tag">
+					<a 
+						href="https://drive.google.com/file/d/1xicc7Mi20zgZk83s-FaoJgYzBfhBaN-X/view?usp=sharing" 
+						target="#"
+					>
+						Build
+					</a>
+				</span>
+			</div>
+
+			<p class="project-description">
+				Это подарок на ДР другу, который прошёл порядка 3000 игр (на данный момент).
+				Поэтому хотелось его удивить и сделать игру с большим количеством механик
+				из классических и не очень игр)
+				<br>
+				Тема: он проспал и опаздывает на работу. Весь путь до работы это 4 уровня:
+			</p>
+
+			<ul>
+				<li>Его квартира (snake)</li>
+				<li>Путь от дома до остановки (cuphead)</li>
+				<li>Поездка на автобусе (battletoads - turbo tunnel)</li>
+				<li>Последние метры до работы (pokemon red)</li>
+			</ul>
+
+			<p>
+				Переходы между уровнями выполнены в виде комикса.
+			</p>
+
+			<img
+				src="./images/run_vlad_run_snake_commics.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_snake.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_cuphead_commics.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_cuphead.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_battletoads_commics.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_battletoads.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_pokemon_commics.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+			<img
+				src="./images/run_vlad_run_pokemon.gif"
+				alt="snake gif"
+				height="278"
+			>
+
+		</div>
+
+		<div class="project">
+			<div class="project-header">
+				<h2 class="project-title">Who wants to be a Millionaire</h2>
+			</div>
+
+			<div class="tags">
+				<span class="tag">2024г</span>
+				<span class="tag">Unity 2D</span>
+				<span class="tag">PC</span>
+			</div>
+
+			<p class="project-description">
+				Это еще одна игра на ДР.
+				Для подруги, которая уезжала работать в Казахстан.
+				Мы решили подарить ей денег и для этого нужен был какой-то интерактив.
+				За 3 дня до ДР мы поняли, что нужно сделать "викторину" на знание Казахстана,
+				так и появилась эта игра.
+			</p>
+
+			<img
+				src="./images/who_wanth_to_be_a_millionaire.gif"
+				alt="wwtbm"
+				height="278"
+			>
+
+			<img
+				src="./images/who_wanth_to_be_a_millionaire_end.gif"
+				alt="wwtbm"
+				height="278"
+			>
+		</div>
+
+		<div class="project">
+			<div class="project-header">
+				<h2 class="project-title">The Islands</h2>
+			</div>
+
+			<div class="tags">
+				<span class="tag">2023г</span>
+				<span class="tag">Unity 3D</span>
+				<span class="tag">Diablo like</span>
+				<span class="tag">PC</span>
+			</div>
+
+			<p class="project-description">
+				Работал в команде энтузиастов "SDR Games". 
+				Кода было много и он был написан одним человек достаточно сумбурно.
+				Поэтому было много задач по фиксу багов и разделению кода на модули.
+				Но основная задача была сделать инвентарь.
+				<br>
+				Для него я выбрал MVP арихтектуру.
+			</p>
+
+			<ul>
+
+				<li>
+					<h4>Model</h4>
+					Класс отвечающий за расположение и обработку айтемов инвентаря.
+					Имеет минимальный интерфейс изменения своего состояния.
+					Через события оповещает всех заинтересованных в изменении своего состояния.
+				</li>
+
+				<li>
+					<h4>View</h4>
+					Это MonoBehaviour классы в которых только логика взаимодействия с игроком.
+					Они считывают клики по ячейкам и панели инвентаря,
+					меняют состояние GameObject-ов,
+					создают "фантомный слот" который прикрепляется к мышке после клика по ячейке,
+					и т.д.
+				</li>
+
+				<li>
+					<h4>Presenter</h4>
+					Класс содержащий логику реагирования на изменения View и Model.
+					Зависит от классов и интерфейсов:
+
+					<ul>
+						<li>
+							Backpack (model); 
+						</li>
+						<li>
+							IConsumerProvider;
+						</li>
+						<li>
+							IEquipmentProvider;
+						</li>
+						<li>
+							IInventoryPanelView
+						</li>
+					</ul>
+
+					Обрабатывает события этих зависимостей:
+					Клик по ячейке, по панели, вне инветаря;
+					Изменение размера и содержимого в инвентаре; и т.д.
+					Так же Presenter дергает классы, которые перенаправляют выбранные
+					объекты либо в эквип, либо в статы персонажа.
+				</li>
+
+			</ul>
+
+			<p>
+				Сейчас ребята полностью передали концепт игры и
+				даже готовятся выпустили её в 
+				<a 
+					href="https://store.steampowered.com/app/3598980/Whist/"
+					target="#"
+				>
+					Steam
+				</a>.
+			</p>
+
+			<img
+				src="./images/the_islands_title.jpg"
+				alt="art"
+				Height="278"
+			>
+
+			<img
+				src="./images/the_islands_inventory.gif"
+				alt="inventory_1"
+				height="278"
+			>
+		</div>
+
+	</div>
+
+	<h2 class="section-title">Джемы</h2>
+
+	<div class="projects">
+
+		<div class="project">
+
+			<div class="project-header">
+				<h2 class="project-title">
+					The hard life of a cameraman
+				</h2>
+			</div>
+
+			<div class="tags">
+				<span class="tag">2023г</span>
+				<span class="tag">Unity 2D / 3D</span>
+				<span class="tag">Platformer</span>
+				<span class="tag">PC</span>
+				<span class="tag">
+    				<a
+    					 href="https://itch.io/jam/gmtk-2023"
+    					 target="#"
+    				>
+    					JMTK Jam "Roles Reversed"
+					</a>
+				</span>
+				<span class="tag">
+					<a
+						href="https://sdrgames.itch.io/the-hard-life-of-a-cameraman" 
+						target="#"
+					>
+						Игрa на itch.io
+					</a>
+				</span>
+			</div>
+
+			<p 
+				 class="project-description"
+				 style="margin:0px"
+			>
+				Суть игры в том, что в вымышленном платформере "Бромарио",
+				<p 
+					 style="color:gray;margin:0px;font-family:monospace;font-style:italic"
+				>
+					(любые совпадения с играми Nintendo случайны.
+					ПОЖАЛУЙСТА НЕ ПОДАВАЙТЕ НА МЕНЯ В СУД (シ. .)シ)
+				</p>
+					который находится на 2D сцене,
+					нужно управлять камерой с помощью управления оператором,
+					который бежит по съёмочной площадке.
+			</p>
+
+			<p class="project-description">
+				Игроку нужно следить и за "Бромарио" и за оператором.
+				"Бромарио" управляется "ИИ" и хаотично носится по своей карте.
+				Если игрок держит его в кадре, то получает за это деньги,
+				если упускает из кадра, то с него списывают деньги.
+				Нужно добежать до конца уровня и не стать банкротом.
+			</p>
+
+			<p class="project-description">
+				Я занимался первоначальной настройкой сцены, контроллером
+				игрока в 3D пространстве и контроллером камеры.
+				<br>
+				<a 
+					href="https://www.youtube.com/watch?v=m-daeCzW2vo" 
+					target="#"
+				>
+					Трейлер на Youtube
+				</a>
+			</p>
+
+			<img
+				src="./images/cameraman_title.png"
+				alt="screen shot title"
+				height=295
+			>
+
+			<img
+				src="./images/cameraman.png"
+				alt="screen shot"
+				height=295
+			>
+
+		</div>
+
+		<div class="project">
+
+			<div class="project-header">
+				<h2 class="project-title">AGAVA Game Jams</h2>
+			</div>
+
+			<div class="tags">
+				<span class="tag">2023г</span>
+				<span class="tag">Unity 2D / 3D</span>
+				<span class="tag">PC / WebGL</span>
+				<span class="tag">
+					<a
+						href="https://lulich.itch.io/stay-in-dungeon"
+						target="#"
+					>
+						Игрa_1 на itch.io
+					</a>
+				</span>
+				<span class="tag">
+					<a
+						href="https://pavelaltynnikov.itch.io/snake-sakutin-vs-all"
+						target="#"
+					>
+						Игрa_3 на itch.io
+					</a>
+				</span>
+			</div>
+
+			<p class="project-description">
+				В течении месяца участвовал в "летнем лагере" от компании AGAVA.
+				<br>
+				Там каждый день проводились мастер классы по различным аспектам геймдева,
+				и раз в две недели проводили 48 часовые геймджемы.
+			</p>
+
+			<h3>Stay in dungeon</h3>
+
+			<p class="project-description">
+				Тема геймджема: "Дискоммуникация".
+				<br>
+				Это момент когда происходит что-то, что нарушает ожидание пользователя. 
+				<br>
+				Например: 
+			</p>
+			<ul>
+				<li>Красные бочки не взрываются после выстрела а лечат игрока.</li>
+				<li>В платформе в лаве игрок не тонет а проходит уровень.</li>
+				<li>Во время игры одна и та же кнопка каждый раз совершает разные действия и после нажатия меняет своё действие.</li>
+				<li>Игрока ориентируется в игре не по картинке а по звуку а сама игра лишь чёрный экран.</li>
+			</ul>
+
+			<p class="project-description">
+				Мы решили сделать набор комнат в которых перепутаны различные механики.
+				Догадаться о том какая механика была изменена можно было 
+				из названия и окружения комнаты.
+				"Игра" получилась так себе, но это был мой первый геймджем)
+			</p>
+
+			<img
+				src="./images/stay_in_dungeon_numbers.png"
+				alt="screen shot"
+				Height=295
+			>
+
+			<img
+				src="./images/stay_in_dungeon_exit.png"
+				alt="screen shot"
+				Height=295
+			>
+
+			<h3>???</h3>
+
+			<p class="project-description">
+				Ссылки на эту игру были утеряны...
+				да и не жалко, так как это был джем о том, 
+				кто лучше сделает рескин какой-то браузерной игры про
+				выбор и перемещение одинаковых айтемов из "кучи" в их "ячейки".
+			</p>
+
+			<h3>Sakutin Snake VS All</h3>
+
+			<p class="project-description">
+				Тема геймджема: "Игра про Романа Сакутина" (это основатель студии AGAVA)
+				Идея пришла тут же: стелс игра про то, как Роман раздаёт ЗП,
+				в офисе, но при этом не должен остаться банкротом.
+				Если сотрудник ловит его, то отбирает много денег и таким образом
+				не получится раздать ЗП всем людям. 
+				ГГ нужно добраться до денежной пушки, чтобы раздавать ЗП на расстоянии
+				и минимальное количество.
+				<br>
+				Кстати этот геймджем наша команда выиграла.
+				</p>
+			<img
+				src="./images/sakutin_snake_vs_all_1.png"
+				alt="screen shot"
+				Height=185
+			>
+			<img
+				src="./images/sakutin_snake_vs_all_2.png"
+				alt="screen shot"
+				Height=185
+			>
+			<img
+				src="./images/sakutin_snake_vs_all_3.png"
+				alt="screen shot"
+				Height=185
+			>
+
+		</div>
+
+	</div>
+
+	<h2 class="section-title">Контакты</h2>
+
+	<div class="projects">
+
+		<ul class="contact-list">
+			<li>
+				<strong>Itch.io:</strong> 
+				<a 
+					href="http://rob11nzon.itch.io/" 
+					target="_blank">rob11nzon.itch.io
+				</a>
+			</li>
+			<li>
+				<strong>GitHub:</strong> 
+				<a 
+					href="https://github.com/PavelAltynnikov" 
+					target="_blank">https://github.com/PavelAltynnikov/
+				</a>
+			</li>
+			<li>
+				<strong>Telegram:</strong> 
+				<a 
+					href="https://t.me/PavelAltynnikov" 
+					target="_blank">@PavelAltynnikov 
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
