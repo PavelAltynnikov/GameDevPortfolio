@@ -59,6 +59,11 @@ h2.section-title {
 	color: var(--ctp-lavender);
 	border-top: 2px solid var(--ctp-surface0);
 }
+ 
+.project {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 h2.project-title {
 	font-size: 2.2em;
@@ -115,11 +120,6 @@ h3 {
 	padding: 18px;
 	color: var(--ctp-subtext1);
 	font-size: 1.1rem;
-}
-
-.projects {
-	max-width: 1000px;
-	margin: 0 auto;
 }
 
 /* Навыки / Стек технологий */
@@ -257,6 +257,7 @@ ul.contact-list {
 ul.contact-list li {
 	margin-bottom: 12px;
 	font-size: 1.1rem;
+	text-align: center;
 }
 
 ul li {
