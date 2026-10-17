@@ -26,6 +26,9 @@
 	--ctp-base: #1e1e2e;
 	--ctp-mantle: #181825;
 	--ctp-crust: #11111b;
+
+	--page-width: 1000px;
+	--gutter: 16px; /* Боковые отступы, чтобы текст не прилипал к краю экрана */
 }
 
 body {
@@ -33,86 +36,73 @@ body {
 	background-color: var(--ctp-base);
 	color: var(--ctp-text);
 	margin: 0;
-	padding: 0;
+	padding: 0 var(--gutter);
 	line-height: 1.6;
+	overflow-wrap: break-word; /* Длинные слова и ссылки не раздвигают страницу */
 }
 
-header {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 50px 0px 0px 0px;
-	text-align: center;
+/* Медиа никогда не шире контейнера */
+img,
+video {
+	max-width: 100%;
 }
 
+/* Заголовки */
 h1 {
-	font-size: 3rem;
-	margin: 0 0 10px 0;
+	font-size: clamp(2rem, 9vw, 3rem);
+	margin: 0 0 20px 0;
 	color: var(--ctp-mauve); /* Пурпурный акцент для имени */
 	text-shadow: 0 0 20px rgba(203, 166, 247, 0.2);
 }
 
 h2.section-title {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: clamp(1.8rem, 7vw, 2.5rem);
 	margin: 30px 0 0 0;
 	padding: 20px 0 0 0;
 	color: var(--ctp-lavender);
 	border-top: 2px solid var(--ctp-surface0);
 }
- 
-.project {
-	max-width: 1000px;
-	margin: 0 auto;
-}
 
 h2.project-title {
-	font-size: 2.2em;
+	font-size: clamp(1.6rem, 6vw, 2.2rem);
 	text-align: center;
 	padding: 25px 0 0 0;
 	border-top: 2px solid var(--ctp-surface0);
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: clamp(1.4rem, 5vw, 1.8rem);
 	text-align: center;
 }
 
-.resume-header {
-	max-width: 1000px; /* Ограничиваем общую ширину шапки */
-	margin: 0 auto; /* Центрируем всю шапку на странице */
+/* Шапка */
+header {
+	max-width: var(--page-width);
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	text-align: center;
 }
 
-/* Стили для заголовка */
-.resume-header h1 {
-	margin-bottom: 20px; /* Отступ между именем и колонками ниже */
-	width: 100%; /* Заголовок гарантированно занимает всю ширину */
-}
-
-/* Контейнер, который создает двухколоночный ряд под заголовком */
+/* Двухколоночный ряд под именем: текст слева, фото справа */
 .header-body {
-	display: flex; 
-	align-items: flex-start; 
-	gap: 40px; /* Отступ между текстовой колонкой и фотографией */
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
 }
 
-/* Левая колонка с текстом */
 .header-info {
-	flex: 1; /* Текст занимает всё доступное место слева от фото */
+	flex: 1; /* Текст занимает всё свободное место слева от фото */
 }
 
-/* Правая колонка с фото */
 .resume-avatar {
-    flex-shrink: 0; /* Запрещаем картинке сжиматься */
+	flex-shrink: 0; /* В ряду фото не сжимается */
+	width: 300px;
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 1;
 	border-radius: 12px;
 	object-fit: cover;
-}
-
-.subtitle {
-    font-size: 1.3rem;
-	color: var(--ctp-sapphire);
-	font-weight: 600;
-	margin-bottom: 25px;
-	letter-spacing: 1px;
 }
 
 .bio {
@@ -120,6 +110,7 @@ h3 {
 	padding: 18px;
 	color: var(--ctp-subtext1);
 	font-size: 1.1rem;
+	text-align: left; /* Шапка по центру, а список — по левому краю */
 }
 
 /* Навыки / Стек технологий */
@@ -141,51 +132,10 @@ h3 {
 	border: 1px solid var(--ctp-surface1);
 }
 
-/* Сетка проектов */
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	gap: 30px;
-	margin-bottom: 60px;
-}
-
-.card {
-	background-color: var(--ctp-mantle);
-	border-radius: 16px;
-	overflow: hidden;
-	border: 1px solid var(--ctp-surface0);
-	transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.card:hover {
-	transform: translateY(-6px);
-	border-color: var(--ctp-mauve);
-}
-
-.card-preview {
-	width: 100%;
-	height: 210px;
-	background-color: var(--ctp-crust);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-}
-
-.card-preview img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.card-content {
-	padding: 24px;
-}
-
-.card-title {
-	font-size: 1.5rem;
-	margin: 0 0 12px 0;
-	color: var(--ctp-rosewater);
+/* Проекты */
+.project {
+	max-width: var(--page-width);
+	margin: 0 auto;
 }
 
 .tags {
@@ -204,82 +154,49 @@ h3 {
 	font-weight: 500;
 }
 
-.card-text {
-	color: var(--ctp-subtext0);
-	font-size: 0.95rem;
-	margin-bottom: 24px;
-	height: 70px; /* Чтобы карточки были ровными при разном тексте */
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-/* Кнопки */
-.btn-group {
-	display: flex;
-	gap: 12px;
-}
-
-.btn {
-	flex: 1;
-	display: inline-block;
-	background-color: var(--ctp-green);
-	color: var(--ctp-base);
-	padding: 10px 16px;
-	border-radius: 8px;
+/* Ссылки */
+a {
+	color: var(--ctp-blue);
 	text-decoration: none;
-	font-weight: 600;
-	transition: background-color 0.2s ease;
-	text-align: center;
-	font-size: 0.95rem;
-}
-
-.btn:hover {
-	background-color: #beecba; /* Чуть светлее зеленого при наведении */
-}
-
-.btn-secondary {
-	background-color: transparent;
-	border: 1px solid var(--ctp-sapphire);
-	color: var(--ctp-sapphire);
-}
-
-.btn-secondary:hover {
-	background-color: rgba(116, 199, 236, 0.1);
-}
-
-/* Ссылки и контакты */
-ul.contact-list {
-	list-style: none;
-	padding: 0;
-	margin: 16px 0 50px 0;
-}
-
-ul.contact-list li {
-	margin-bottom: 12px;
-	font-size: 1.1rem;
-	text-align: center;
-}
-
-ul li {
-	text-align: left
-}
-
-a { 
-	color: var(--ctp-blue); 
-	text-decoration: none; 
 	transition: color 0.2s;
 }
-a:hover { 
+
+a:hover {
 	color: var(--ctp-sky);
-	text-decoration: underline; 
+	text-decoration: underline;
 }
 
-footer {
-	text-align: center;
-	padding: 40px 20px;
-	color: var(--ctp-overlay1);
-	font-size: 0.9rem;
-	border-top: 1px solid var(--ctp-surface0);
-	margin-top: 80px;
-	background-color: var(--ctp-mantle);
+/* Узкие экраны.
+   В HTML у картинок заданы только height (278 / 295 / 185 px). На десктопе это
+   даёт ширину до ~610px, и всё помещается. Ниже 700px такая высота уже
+   сплющила бы картинку по ширине экрана, поэтому отдаём размер под контроль CSS:
+   ширина по контейнеру, высота — по пропорциям оригинала. */
+@media (max-width: 700px) {
+	img,
+	video {
+		display: block;
+		height: auto;
+		margin: 12px auto;
+	}
+
+	.header-body {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.header-info {
+		flex: none;
+		width: 100%;
+	}
+
+	.resume-avatar {
+		order: -1; /* На телефоне фото сверху, текст под ним */
+		width: min(300px, 100%);
+		margin: 0 auto;
+	}
+
+	header {
+		padding-top: 30px;
+	}
 }
