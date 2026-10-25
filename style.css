@@ -31,6 +31,10 @@
 	--gutter: 16px; /* Боковые отступы, чтобы текст не прилипал к краю экрана */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 	background-color: var(--ctp-base);
@@ -62,6 +66,7 @@ h2.section-title {
 	padding: 20px 0 0 0;
 	color: var(--ctp-lavender);
 	border-top: 2px solid var(--ctp-surface0);
+  scroll-margin-top: 40px;
 }
 
 h2.project-title {
@@ -69,11 +74,13 @@ h2.project-title {
 	text-align: center;
 	padding: 25px 0 0 0;
 	border-top: 2px solid var(--ctp-surface0);
+  scroll-margin-top: 40px;
 }
 
 h3 {
 	font-size: clamp(1.4rem, 5vw, 1.8rem);
 	text-align: center;
+  scroll-margin-top: 40px;
 }
 
 /* Шапка */
